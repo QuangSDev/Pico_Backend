@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {}
+    "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {
+    "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
+        "projectUniqueName": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj",
         "projectName": "Pico_Backend",
-        "projectPath": "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Pico_Backend\\Pico_Backend\\obj\\",
+        "projectPath": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

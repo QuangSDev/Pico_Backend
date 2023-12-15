@@ -14,12 +14,15 @@ namespace Pico_Backend.Repository
         private readonly DbConnection _connection;
         public BaseRepository()
         {
-            _connection = new MySqlConnection("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=orion66;");
+            _connection = new MySqlConnection("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=;");
         }
 
-        public Task<IEnumerable<T>> GetAll()
+        public async Task<IEnumerable<T>> GetAll()
         {
-            throw new NotImplementedException();
+            string storedProcedureName = $"Proc_{typeof(T).Name}_GetAll"; _connection.Open();
+            var result = await _connection.QueryAsync<T>(storedProcedureName, commandType: CommandType.StoredProcedure);
+            _connection.Close();
+            return result;
         }
 
         public async Task<T> GetById(int id)

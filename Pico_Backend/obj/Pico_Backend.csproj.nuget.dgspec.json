@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {}
+    "C:\\Users\\nghie\\OneDrive\\Tài liệu\\Ky7\\MNM\\BTL_Backend\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {}
   },
   "projects": {
-    "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {
+    "C:\\Users\\nghie\\OneDrive\\Tài liệu\\Ky7\\MNM\\BTL_Backend\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
+        "projectUniqueName": "C:\\Users\\nghie\\OneDrive\\Tài liệu\\Ky7\\MNM\\BTL_Backend\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
         "projectName": "Pico_Backend",
-        "projectPath": "D:\\C#\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\Pico_Backend\\Pico_Backend\\obj\\",
+        "projectPath": "C:\\Users\\nghie\\OneDrive\\Tài liệu\\Ky7\\MNM\\BTL_Backend\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
+        "packagesPath": "C:\\Users\\nghie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nghie\\OneDrive\\Tài liệu\\Ky7\\MNM\\BTL_Backend\\Pico_Backend\\Pico_Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nghie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,44 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.24, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.3.1, )"
-            },
-            "MySqlConnector.DependencyInjection": {
-              "target": "Package",
-              "version": "[2.3.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration["ConnectionString"];
 builder.Services.AddMySqlDataSource(connectionString);
 builder.Services.AddScoped<ITelevisonRepository, TelevisonRepository>();
+builder.Services.AddScoped<IWashingMachineRepository, WashingMachineRepository>();
 
 var app = builder.Build();
 app.UseCors(option => option.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());

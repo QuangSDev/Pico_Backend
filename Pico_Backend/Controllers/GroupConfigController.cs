@@ -15,7 +15,7 @@ namespace Pico_Backend.Controllers
         {
             try
             {
-                var repo = new GroupConfigRepository("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=orion66;");
+                var repo = new GroupConfigRepository("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=;");
                 var result = await repo.GetGroupConfig(groupConfigID);
                 return Ok(result);
             }

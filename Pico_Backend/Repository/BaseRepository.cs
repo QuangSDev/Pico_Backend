@@ -14,7 +14,7 @@ namespace Pico_Backend.Repository
         private readonly DbConnection _connection;
         public BaseRepository()
         {
-            _connection = new MySqlConnection("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=orion66;");
+            _connection = new MySqlConnection("User Id=root;Host=localhost;Database=pico;Character Set=utf8;Password=;");
         }
 
         public Task<IEnumerable<T>> GetAll()

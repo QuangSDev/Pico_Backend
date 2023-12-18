@@ -20,6 +20,7 @@ var connectionString = builder.Configuration["ConnectionString"];
 builder.Services.AddMySqlDataSource(connectionString);
 builder.Services.AddScoped<ITelevisonRepository, TelevisonRepository>();
 builder.Services.AddScoped<IDieuHoaRepository, DieuHoaRepository>();
+builder.Services.AddScoped<INoiComRepositoty, NoiComRepository>();
 var app = builder.Build();
 app.UseCors(option => option.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 

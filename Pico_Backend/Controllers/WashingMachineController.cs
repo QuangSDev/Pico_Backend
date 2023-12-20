@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Pico_Backend.Interface;
 using Pico_Backend.Models;
+using Pico_Backend.Repository;
+
 namespace Pico_Backend.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class WashingMachineController : BaseController<WashingMachine>
     {

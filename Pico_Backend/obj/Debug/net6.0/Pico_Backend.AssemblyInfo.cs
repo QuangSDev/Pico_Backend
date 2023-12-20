@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pico_Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ce039d9cc0f4bee2478bf8179e0656b17552e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pico_Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pico_Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

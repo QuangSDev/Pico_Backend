@@ -13,8 +13,8 @@ namespace Pico_Backend.Controllers
     [ApiController]
     public class NoiComController : BaseController<NoiComcs>
     {
-        private readonly INoiComRepository _noicomRepository;
-        public NoiComController(INoiComRepository noicomRepository) : base(noicomRepository)
+        private readonly INoiComRepositoty _noicomRepository;
+        public NoiComController(INoiComRepositoty noicomRepository) : base(noicomRepository)
         {
             _noicomRepository = noicomRepository;
         }

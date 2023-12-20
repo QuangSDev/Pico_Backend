@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj": {}
+    "D:\\pico\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {}
   },
   "projects": {
-    "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj": {
+    "D:\\pico\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj",
+        "projectUniqueName": "D:\\pico\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
         "projectName": "Pico_Backend",
-        "projectPath": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\Pico_Backend.csproj",
+        "projectPath": "D:\\pico\\Pico_Backend\\Pico_Backend\\Pico_Backend.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Pico_backend\\Pico_FrontEnd\\Pico_Backend\\obj\\",
+        "outputPath": "D:\\pico\\Pico_Backend\\Pico_Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

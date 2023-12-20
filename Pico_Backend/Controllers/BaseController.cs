@@ -26,8 +26,10 @@ namespace Pico_Backend.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+        
             try
             {
+
                 var records = await _baseRepository.GetAll();
                 if (records != null)
                 {
@@ -66,7 +68,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 

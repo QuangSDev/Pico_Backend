@@ -19,6 +19,29 @@ namespace Pico_Backend.Repository
 
         public async Task<IEnumerable<T>> GetAll()
         {
+            //dùng query trực tiếp
+
+            /*try
+            {
+                _connection.Open();
+
+                // Thực hiện truy vấn SQL trực tiếp
+                var query = "SELECT * FROM conditioner"; // Thay YourTableName bằng tên bảng cần truy vấn
+
+                var result = await _connection.QueryAsync<T>(query);
+
+                _connection.Close();
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                Console.WriteLine("Lỗi khi lấy dữ liệu: " + ex.Message);
+                _connection.Close(); // Đảm bảo kết nối được đóng khi có lỗi
+                throw; // Ném ngoại lệ để báo hiệu việc xảy ra lỗi
+            }
+            */
             string storedProcedureName = $"Proc_{typeof(T).Name}_GetAll"; _connection.Open();
             var result = await _connection.QueryAsync<T>(storedProcedureName, commandType: CommandType.StoredProcedure);
             _connection.Close();

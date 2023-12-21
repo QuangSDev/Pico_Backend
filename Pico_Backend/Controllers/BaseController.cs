@@ -66,7 +66,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -114,7 +114,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -134,7 +134,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -161,7 +161,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -187,7 +187,7 @@ namespace Pico_Backend.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex);
+                return StatusCode(500, ex.Message);
             }
         }
 

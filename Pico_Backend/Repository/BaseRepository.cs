@@ -27,7 +27,7 @@ namespace Pico_Backend.Repository
             string storedProcedureName = $"Proc_{typeof(T).Name}_GetByID";
             var parameters = new DynamicParameters();
             _connection.Open();
-            parameters.Add($"m_{typeof(T).Name}ID", id);
+            parameters.Add($"@id", id);
             var record = await _connection.QueryFirstOrDefaultAsync<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
             _connection.Close();
             return record;
@@ -65,6 +65,7 @@ namespace Pico_Backend.Repository
             var parameters = new DynamicParameters();
             _connection.Open();
             parameters.Add("@data", JsonSerializer.Serialize(item));
+            parameters.Add("@id", id);
             var rowsAffected = await _connection.ExecuteAsync(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
             _connection.Close();
             return rowsAffected;
@@ -83,7 +84,7 @@ namespace Pico_Backend.Repository
 
         public async Task<int> DeleteMany(int[] ids, string tableName)
         {
-            var procedureName = $"Proc_{tableName}_Delete";
+            var procedureName = $"Proc_{tableName}_DeleteMany";
             var dynamicParameters = new DynamicParameters();
             _connection.Open();
             dynamicParameters.Add("@ids", string.Join(",", ids));
